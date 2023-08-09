@@ -7,6 +7,7 @@ import Ex_jsx from "./componets/jsx_with_without";
 function App() {
   return (
     <>
+      {/* This is all about components*/}
       {/* we can use components are reuseble  */}
       <Greet name="Likitha Sri" work="Student">
         <p>This is a childeren</p>
