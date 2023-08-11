@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 class Message extends Component {
   constructor() {
-    super();
+    // Constructor
+    super(); // indicates the Parent Class
     this.state = { message: "Welcome to the Youtube channel" };
   }
   ChangeMessage() {
     this.setState({
-      message: "Thank you",
+      message: "Thank you", // changing message
     });
   }
   render() {
