@@ -7,9 +7,11 @@
 import { Children } from "react";
 
 //props or properties
-// const Arr_Greet = (props) => {
-// below is destructing props
-const Arr_Greet = ({ name, work }) => {
+const Arr_Greet = (props) => {
+  // below is destructing props
+  // const Arr_Greet = ({ name, work }) => {  use this or below one in function components
+  const { name, work } = props;
+
   // props.name = "Arujn";// it doesn't possible because props are immutable
   return (
     <div>
