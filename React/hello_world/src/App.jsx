@@ -13,10 +13,18 @@ import Event_Bind from "./componets/Event_Bind";
 import ParentComponent from "./componets/ParentComponent";
 import UseGreet from "./componets/UseGreet";
 import Name_List from "./componets/Name_List";
+import StyleSheet from "./componets/StyleSheet";
+import Inline from "./componets/Inline";
+import Styles from "./componets/style.module.css";
+import "./componets/MyStyle.css";
 function App() {
   return (
     <>
-      <Name_List />
+      <h1 className={Styles.Success}>Success</h1>
+      <h1 className="primary">Error</h1>
+      {/* <Inline /> */}
+      {/* <StyleSheet Primary={true} /> */}
+      {/* <Name_List /> */}
       {/* <UseGree/t /> */}
       {/* <ParentComponent /> */}
       {/* </Event_Bind /> */}
@@ -31,7 +39,6 @@ function App() {
         <p>This is a childeren</p>
       </Greet>
       <Class_component name="Bangaram"></Class_component> */}
-
       {/* <Greet name="Jyotsna Sri" work="Job">
         <button> Action</button>
       </Greet>
