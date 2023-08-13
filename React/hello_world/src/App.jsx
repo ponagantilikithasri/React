@@ -12,10 +12,12 @@ import Class_Click from "./componets/Class_Click";
 import Event_Bind from "./componets/Event_Bind";
 import ParentComponent from "./componets/ParentComponent";
 import UseGreet from "./componets/UseGreet";
+import Name_List from "./componets/Name_List";
 function App() {
   return (
     <>
-      <UseGreet></UseGreet>
+      <Name_List />
+      {/* <UseGree/t /> */}
       {/* <ParentComponent /> */}
       {/* </Event_Bind /> */}
       {/* <Class_Click /> */}
