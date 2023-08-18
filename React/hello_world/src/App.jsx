@@ -17,11 +17,17 @@ import StyleSheet from "./componets/StyleSheet";
 import Inline from "./componets/Inline";
 import Styles from "./componets/style.module.css";
 import "./componets/MyStyle.css";
+import Form from "./Form class";
+import LifeCycleA from "./componets/LifeCycleA";
+import Form_fun from "./componets/Form_fun";
 function App() {
   return (
     <>
-      <h1 className={Styles.Success}>Success</h1>
-      <h1 className="primary">Error</h1>
+      <Form_fun />
+      {/* <LifeCycleA /> */}
+      {/* <Form /> */}
+      {/* <h1 className={Styles.Success}>Success</h1>
+      <h1 className="primary">Error</h1> */}
       {/* <Inline /> */}
       {/* <StyleSheet Primary={true} /> */}
       {/* <Name_List /> */}
