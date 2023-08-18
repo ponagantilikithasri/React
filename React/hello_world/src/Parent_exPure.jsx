@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, PureComponent } from "react";
 import PureComp from "./componets/PureComp";
 import RegularCompo from "./RegularCompo";
 
-export default class Parent_exPure extends Component {
+export default class Parent_exPure extends PureComponent {
+  // when parent component is Pure then childe component is doesn't re-render
   constructor(props) {
     super(props);
 
