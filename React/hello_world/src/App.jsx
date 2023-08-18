@@ -23,8 +23,8 @@ import Form_fun from "./componets/Form_fun";
 function App() {
   return (
     <>
-      <Form_fun />
-      {/* <LifeCycleA /> */}
+      {/* <Form_fun /> */}
+      <LifeCycleA />
       {/* <Form /> */}
       {/* <h1 className={Styles.Success}>Success</h1>
       <h1 className="primary">Error</h1> */}
