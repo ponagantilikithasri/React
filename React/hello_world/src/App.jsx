@@ -20,11 +20,13 @@ import "./componets/MyStyle.css";
 import Form from "./Form class";
 import LifeCycleA from "./componets/LifeCycleA";
 import Form_fun from "./componets/Form_fun";
+import FragamentDemo from "./componets/FragamentDemo";
 function App() {
   return (
     <>
+      <FragamentDemo />
       {/* <Form_fun /> */}
-      <LifeCycleA />
+      {/* <LifeCycleA /> */}
       {/* <Form /> */}
       {/* <h1 className={Styles.Success}>Success</h1>
       <h1 className="primary">Error</h1> */}
