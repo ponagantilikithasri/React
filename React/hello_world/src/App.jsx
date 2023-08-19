@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Parent_exPure from "./Parent_exPure";
+import RefsDemo from "./componets/RefsDemo";
 function App() {
   return (
     <>
-      <Parent_exPure />
+      <RefsDemo />
     </>
   );
 }
