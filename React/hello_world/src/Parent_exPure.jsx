@@ -1,8 +1,9 @@
-import React, { Component, PureComponent } from "react";
+import React, { Component } from "react";
 import PureComp from "./componets/PureComp";
 import RegularCompo from "./RegularCompo";
+import MemoComp from "./MemoComp";
 
-export default class Parent_exPure extends PureComponent {
+export default class Parent_exPure extends Component {
   // when parent component is Pure then childe component is doesn't re-render
   constructor(props) {
     super(props);
@@ -23,8 +24,9 @@ export default class Parent_exPure extends PureComponent {
     return (
       <div>
         Parent_exPure
-        <PureComp name={this.state.name} />
-        <RegularCompo name={this.state.name} />
+        <MemoComp name={this.state.name} />
+        {/* <PureComp name={this.state.name} />
+        <RegularCompo name={this.state.name} /> */}
       </div>
     );
   }
