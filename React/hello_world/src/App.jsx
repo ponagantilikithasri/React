@@ -1,9 +1,9 @@
 import { useState } from "react";
-import RefsDemo from "./componets/RefsDemo";
+import Focus_input from "./componets/Focus_input";
 function App() {
   return (
     <>
-      <RefsDemo />
+      <Focus_input />
     </>
   );
 }
