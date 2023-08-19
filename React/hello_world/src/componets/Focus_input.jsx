@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Input_ref from "./Input_ref";
+import Input_ref from "./input_ref";
 class Focus_input extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +13,7 @@ class Focus_input extends Component {
       <div>
         {/* <input_ref ref={this.FocusRef} /> */}
         <Input_ref ref={this.FocusRef} />
+        {/* in above statement we attaching ref attribute to child component  */}
         <button onClick={this.clickHandler}> click me </button>
       </div>
     );
