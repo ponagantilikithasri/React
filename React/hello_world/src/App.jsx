@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Focus_input from "./componets/Focus_input";
-import FRparent from "./componets/FRparent";
+import Module from "./componets/module";
+import Portal_module from "./componets/Portal_module";
 function App() {
   return (
     <>
-      <FRparent />
-      {/* <Focus_input /> */}
+      <Module />
+      <Portal_module />
     </>
   );
 }
