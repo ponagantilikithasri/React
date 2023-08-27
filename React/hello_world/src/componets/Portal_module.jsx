@@ -2,14 +2,15 @@ import React from "react";
 import ReactDom from "react-dom";
 export default function Portal_module({ P_show, P_Close }) {
   if (!P_show) return null;
-  return (
+  return ReactDom.createPortal(
     <div className="modal">
       <div className="overlay"></div>
       <div className="content">
         <p>Portal_module</p>
         <button onClick={P_Close}>Close</button>
       </div>
-    </div>
+    </div>,
+    document.getElementById("portal")
   );
 }
 
