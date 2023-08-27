@@ -1,23 +1,18 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
-export default function Portal_module() {
-  const [isModelOpen, setIsModelOpen] = useState(false);
-  const toogleMethod = () => {
-    setIsModelOpen(!isModelOpen);
-  };
-  return ReactDOM.createPortal(
-    <div>
-      <h1>My App</h1>
-      <p>
-        This is an example of how you might use React.createPortal. I think it
-        is a pretty neat API that is yet another awesome escape hatch that React
-        provides for practical reasons. Sometimes you just need to render
-        something completely outside the React Tree.
-      </p>
-    </div>,
-    document.getElementById("portal-modul")
+import React from "react";
+import ReactDom from "react-dom";
+export default function Portal_module({ P_show, P_Close }) {
+  if (!P_show) return null;
+  return (
+    <div className="modal">
+      <div className="overlay"></div>
+      <div className="content">
+        <p>Portal_module</p>
+        <button onClick={P_Close}>Close</button>
+      </div>
+    </div>
   );
 }
+
 // import React from "react";
 // import ReactDOM from "react-dom";
 // export default function Module() {
