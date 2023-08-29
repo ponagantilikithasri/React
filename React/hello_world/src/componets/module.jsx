@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import { useState } from "react";
 import Portal_module from "./Portal_module";
-export default function () {
+export default function Module() {
   const [show, setShow] = useState(false);
   console.log(show);
   return (
